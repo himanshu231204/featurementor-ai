@@ -1,4 +1,3 @@
-
 # 🧠 FeatureMentor AI  
 
 ### A Student-Focused AI Feature Engineering Advisor
@@ -60,7 +59,6 @@ https://featurementor-ai-7fgt3wychg7xj6ltklge7w.streamlit.app/
 ## 🏗️ System Architecture
 
 ```
-
 CSV Dataset
 ↓
 Data Profiler (Statistics)
@@ -70,7 +68,6 @@ Rule-Based Feature Engine
 GenAI Explanation Layer
 ↓
 Interactive Dashboard + PDF Report
-
 ```
 
 ### Key Architectural Decisions
@@ -156,7 +153,6 @@ Very small datasets may produce weak statistical signals.
 ## 📁 Project Structure
 
 ```
-
 featurementor-ai/
 │
 ├── src/
@@ -168,8 +164,7 @@ featurementor-ai/
 ├── test_run.py
 ├── requirements.txt
 ├── README.md
-
-````
+```
 
 ---
 
@@ -184,7 +179,7 @@ source venv/bin/activate   # Windows: venv\Scripts\activate
 
 pip install -r requirements.txt
 streamlit run src/ui/app.py
-````
+```
 
 ---
 
@@ -206,12 +201,25 @@ streamlit run src/ui/app.py
 
 ---
 
+## 💖 Support This Project
+
+If this project helped you, consider supporting my work!
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-💖-ff69b4?style=for-the-badge)](https://github.com/sponsors/himanshu231204)
+
+Every contribution helps me:
+- ⏰ Spend more time on open-source
+- 🆓 Keep all tools free for everyone
+- 📚 Create more tutorials and guides
+- 🚀 Build new developer tools
+
+**[⭐ Star this repo](../../stargazers)** if you find it useful — it means a lot!
+
+---
+
 ## ⭐ Final Note
 
 FeatureMentor AI is not just a tool —
 it is a **learning companion** for understanding feature engineering.
 
 If you find this project useful, feel free to ⭐ the repository.
-
-````
-
