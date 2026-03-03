@@ -192,15 +192,6 @@ streamlit run src/ui/app.py
 
 ---
 
-## 👨‍💻 Developed By
-
-**Himanshu Kumar**
-
-* 🔗 LinkedIn: [https://www.linkedin.com/in/himanshu231204](https://www.linkedin.com/in/himanshu231204)
-* 🐙 GitHub: [https://github.com/himanshu231204](https://github.com/himanshu231204)
-
----
-
 ## 💖 Support This Project
 
 If this project helped you, consider supporting my work!
@@ -214,6 +205,15 @@ Every contribution helps me:
 - 🚀 Build new developer tools
 
 **[⭐ Star this repo](../../stargazers)** if you find it useful — it means a lot!
+
+---
+
+## 👨‍💻 Developed By
+
+**Himanshu Kumar**
+
+* 🔗 LinkedIn: [https://www.linkedin.com/in/himanshu231204](https://www.linkedin.com/in/himanshu231204)
+* 🐙 GitHub: [https://github.com/himanshu231204](https://github.com/himanshu231204)
 
 ---
 
