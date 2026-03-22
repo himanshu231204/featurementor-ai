@@ -27,26 +27,26 @@ jobs:
           gh api \
             --method PUT \
             /repos/${{ github.repository }}/topics \
-            -f "names[]=machine-learning" \
-            -f "names[]=feature-engineering" \
-            -f "names[]=data-science" \
-            -f "names[]=python" \
-            -f "names[]=streamlit" \
-            -f "names[]=google-gemini" \
-            -f "names[]=generative-ai" \
-            -f "names[]=artificial-intelligence" \
-            -f "names[]=data-preprocessing" \
-            -f "names[]=educational" \
-            -f "names[]=open-source" \
-            -f "names[]=beginner-friendly" \
-            -f "names[]=pandas" \
-            -f "names[]=scikit-learn" \
-            -f "names[]=explainable-ai" \
-            -f "names[]=ml-education" \
-            -f "names[]=kaggle" \
-            -f "names[]=data-analysis" \
-            -f "names[]=pdf-report" \
-            -f "names[]=genai"
+            -F "names[]=machine-learning" \
+            -F "names[]=feature-engineering" \
+            -F "names[]=data-science" \
+            -F "names[]=python" \
+            -F "names[]=streamlit" \
+            -F "names[]=google-gemini" \
+            -F "names[]=generative-ai" \
+            -F "names[]=artificial-intelligence" \
+            -F "names[]=data-preprocessing" \
+            -F "names[]=educational" \
+            -F "names[]=open-source" \
+            -F "names[]=beginner-friendly" \
+            -F "names[]=pandas" \
+            -F "names[]=scikit-learn" \
+            -F "names[]=explainable-ai" \
+            -F "names[]=ml-education" \
+            -F "names[]=kaggle" \
+            -F "names[]=data-analysis" \
+            -F "names[]=pdf-report" \
+            -F "names[]=genai"
 
       - name: Confirm changes
         env:
