@@ -1,0 +1,57 @@
+name: Set Repository Description and Topics
+
+on:
+  workflow_dispatch:
+
+permissions:
+  administration: write
+
+jobs:
+  set-metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set repository description and homepage
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api \
+            --method PATCH \
+            /repos/${{ github.repository }} \
+            -f description="🧠 AI-powered Feature Engineering Mentor for ML students. Upload any CSV → get smart preprocessing recommendations with Google Gemini explanations. Learn WHY, not just HOW. Built with Streamlit + Python. ⭐ Star if useful!" \
+            -f homepage="https://featurementor-ai-7fgt3wychg7xj6ltklge7w.streamlit.app/"
+
+      - name: Set repository topics
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api \
+            --method PUT \
+            /repos/${{ github.repository }}/topics \
+            -f "names[]=machine-learning" \
+            -f "names[]=feature-engineering" \
+            -f "names[]=data-science" \
+            -f "names[]=python" \
+            -f "names[]=streamlit" \
+            -f "names[]=google-gemini" \
+            -f "names[]=generative-ai" \
+            -f "names[]=artificial-intelligence" \
+            -f "names[]=data-preprocessing" \
+            -f "names[]=educational" \
+            -f "names[]=open-source" \
+            -f "names[]=beginner-friendly" \
+            -f "names[]=pandas" \
+            -f "names[]=scikit-learn" \
+            -f "names[]=explainable-ai" \
+            -f "names[]=ml-education" \
+            -f "names[]=kaggle" \
+            -f "names[]=data-analysis" \
+            -f "names[]=pdf-report" \
+            -f "names[]=genai"
+
+      - name: Confirm changes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "✅ Repository metadata updated successfully!"
+          gh repo view ${{ github.repository }} --json description,repositoryTopics \
+            --jq '"Description: " + .description + "\nTopics: " + (.repositoryTopics.nodes | map(.topic.name) | join(", "))'
