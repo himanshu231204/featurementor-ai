@@ -1,152 +1,145 @@
-# 🧠 FeatureMentor AI  
+<div align="center">
 
-### A Student-Focused AI Feature Engineering Advisor
-🔗 **Live Application:** https://featurementor-ai-7fgt3wychg7xj6ltklge7w.streamlit.app/
+# 🧠 FeatureMentor AI
 
-[![Live App](https://img.shields.io/badge/Live%20App-Visit%20Now-brightgreen)](https://featurementor-ai-7fgt3wychg7xj6ltklge7w.streamlit.app/)
-![Python](https://img.shields.io/badge/Python-3.9+-blue)
-![Framework](https://img.shields.io/badge/Framework-Streamlit-red)
-![ML](https://img.shields.io/badge/ML-Scikit--Learn-orange)
-![GenAI](https://img.shields.io/badge/GenAI-Gemini-yellow)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+### *The AI Mentor That Teaches You Feature Engineering — Not Just Does It For You*
+
+<p align="center">
+  <a href="https://featurementor-ai-7fgt3wychg7xj6ltklge7w.streamlit.app/">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Now-brightgreen?style=for-the-badge" alt="Live Demo">
+  </a>
+  <a href="https://github.com/himanshu231204/featurementor-ai/stargazers">
+    <img src="https://img.shields.io/github/stars/himanshu231204/featurementor-ai?style=for-the-badge&color=yellow" alt="Stars">
+  </a>
+  <a href="https://github.com/himanshu231204/featurementor-ai/network/members">
+    <img src="https://img.shields.io/github/forks/himanshu231204/featurementor-ai?style=for-the-badge&color=blue" alt="Forks">
+  </a>
+  <a href="https://github.com/himanshu231204/featurementor-ai/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge" alt="License">
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Streamlit-1.x-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
+  <img src="https://img.shields.io/badge/Google%20Gemini-AI-4285F4?style=flat-square&logo=google&logoColor=white" alt="Gemini AI">
+  <img src="https://img.shields.io/badge/scikit--learn-ML-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" alt="scikit-learn">
+  <img src="https://img.shields.io/badge/Pandas-Data-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas">
+</p>
+
+<br/>
+
+> **"Most ML beginners apply preprocessing steps blindly. FeatureMentor AI changes that — it acts as your personal mentor, explaining every decision in plain English."**
+
+</div>
 
 ---
 
-## 📌 Overview
+## ✨ What Makes This Special?
 
-**FeatureMentor AI** is a **learning-oriented AI Feature Engineering Advisor** built for beginner and intermediate data science students.
+Most tools tell you **what** to do. FeatureMentor AI tells you **why**.
 
-The goal of this project is not automation, but **understanding**.
+Upload any CSV dataset → get intelligent feature engineering recommendations → understand the *reasoning* behind every suggestion — all powered by Google Gemini AI.
 
-Instead of blindly applying preprocessing steps, FeatureMentor AI:
-- Analyzes tabular datasets
-- Recommends feature engineering actions
-- Explains *why* each decision is made in simple language
-- Generates a learning-focused PDF report
-
-This makes feature engineering **transparent, explainable, and student-friendly**.
-
----
-
-## 🎯 Why FeatureMentor AI?
-
-Most beginners struggle with feature engineering because:
-- Preprocessing steps are applied without reasoning
-- Tutorials explain *how*, not *why*
-- AutoML tools hide decision logic
-
-👉 **FeatureMentor AI solves this gap** by acting like a **mentor**, not just a tool.
-
-> **Core Design Principle:**  
-> **AI explains decisions — it does not make decisions.**
+| Without FeatureMentor AI | With FeatureMentor AI |
+|:--|:--|
+| 😕 Copy-paste preprocessing from tutorials | ✅ Understand *why* each step matters |
+| 😕 AutoML hides the decision logic | ✅ Transparent, explainable recommendations |
+| 😕 Guess which features to drop or encode | ✅ Rule-based + AI-backed guidance |
+| 😕 No learning, just execution | ✅ Build genuine ML intuition |
 
 ---
 
 ## 🚀 Live Demo
 
-🔗 **Live Application:**  
-https://featurementor-ai-7fgt3wychg7xj6ltklge7w.streamlit.app/
+### 🔗 [Open Live Demo](https://featurementor-ai-7fgt3wychg7xj6ltklge7w.streamlit.app/)
 
-### What you can do:
-- Upload any CSV dataset
-- Select a target column
-- View feature-wise recommendations
-- Read beginner-friendly explanations
-- Download a detailed PDF report
+**Try it now — no setup required!**
+
+1. Upload the included `sample_data.csv` (or any CSV dataset)
+2. Select your target column
+3. Click **Generate Feature Engineering Analysis**
+4. Explore AI-powered explanations for each feature
+5. Download a professional PDF report
 
 ---
 
-## 🏗️ System Architecture
+## 🎯 Key Features
+
+- 🔍 **Smart Feature Profiling** — Automatically detects data types, missing values, skewness, and cardinality
+- 🤖 **AI-Powered Explanations** — Google Gemini generates mentor-style explanations in plain English
+- 📋 **Rule-Based Recommendations** — Deterministic, trustworthy feature engineering decisions
+- 📄 **PDF Report Generation** — Download a complete feature engineering report for your dataset
+- 🎨 **Beautiful Dashboard** — Modern dark-themed Streamlit UI with expandable feature cards
+- 🛡️ **Fail-Safe Design** — Graceful fallback if the AI service is unavailable
+- 🆓 **100% Free & Open Source** — No login, no API key required for the live app
+
+---
+
+## 🏗️ How It Works
 
 ```
-CSV Dataset
-↓
-Data Profiler (Statistics)
-↓
-Rule-Based Feature Engine
-↓
-GenAI Explanation Layer
-↓
-Interactive Dashboard + PDF Report
+📁 CSV Upload
+     │
+     ▼
+📊 Data Profiler          ← Computes stats: dtype, missing%, skewness, cardinality
+     │
+     ▼
+⚙️  Rule-Based Engine     ← Deterministic decisions (always correct)
+     │
+     ▼
+🤖 Gemini AI Layer        ← Generates human-readable explanations only
+     │
+     ▼
+🖥️  Interactive Dashboard + 📄 PDF Report
 ```
 
-### Key Architectural Decisions
-- Deterministic rules ensure correctness
-- GenAI is restricted to **explanations only**
-- Fail-safe fallback if AI service is unavailable
-- Modular and scalable `src/`-based structure
+> **Core Principle:** AI explains — it never decides. Rules decide — AI teaches.
 
 ---
 
-## 📊 Feature Engineering Logic (Examples)
+## 📊 Feature Engineering Decision Table
 
-| Scenario | Recommendation | Reason |
-|--------|---------------|--------|
-| Identifier column (`PassengerId`) | Drop Feature | No predictive meaning |
-| High missing values (`Cabin`) | Drop Feature | Unreliable signal |
-| Numeric + missing (`Age`) | Median Imputation | Robust to outliers |
-| Highly skewed numeric (`Fare`) | Log Transformation | Improves model stability |
-| Low-cardinality categorical (`Sex`) | One-Hot Encoding | Safe and interpretable |
-| High-cardinality categorical (`Ticket`) | Target Encoding | Avoids sparse vectors |
-
----
-
-## 🤖 Role of GenAI (Gemini)
-
-GenAI is used **only for explanation**, not for decision-making.
-
-### What AI does:
-- Explains feature engineering decisions
-- Uses simple, mentor-style language
-- Helps students build intuition
-
-### What AI does NOT do:
-- ❌ Decide transformations  
-- ❌ Modify datasets  
-- ❌ Train ML models  
-
-This ensures **trust, correctness, and explainability**.
+| Dataset Scenario | Recommendation | Why |
+|:--|:--|:--|
+| `PassengerId` (unique ID) | 🗑 Drop Feature | No predictive signal — pure identifier |
+| `Cabin` (>40% missing) | 🗑 Drop Feature | Too many gaps — unreliable signal |
+| `Age` (numeric, some missing) | 📉 Median Imputation | Robust to outliers; preserves distribution |
+| `Fare` (highly skewed) | 📈 Log Transformation | Reduces skewness; stabilizes model training |
+| `Sex` (2 categories) | 🔠 One-Hot Encoding | Low cardinality — safe and interpretable |
+| `Ticket` (hundreds of values) | 🎯 Target Encoding | High cardinality — avoids sparse vectors |
 
 ---
 
-## 🖥️ User Interface
+## 🖥️ UI Overview
 
-- Modern SaaS-style dark theme
-- Tab-based workflow:
-  - 📂 Upload Dataset
-  - 📊 Analysis Dashboard
-  - 📘 User Manual
-- Feature-wise expandable insights
-- Visual badges, summary cards, and progress indicators
-- Built-in documentation and limitations
+| Tab | Description |
+|:--|:--|
+| 📂 **Upload Dataset** | Upload CSV, preview data, select target column, trigger analysis |
+| 📊 **Analysis Dashboard** | Summary cards, feature-wise recommendations, color-coded action badges, PDF download |
+| 📘 **User Manual** | Built-in documentation explaining every concept |
 
 ---
 
-## ✅ Where This Tool Works
+## 🛠️ Local Setup
 
-FeatureMentor AI works on:
-- Any **tabular CSV dataset**
-- Classification problems
-- Regression problems
-- Mixed numerical and categorical features
+```bash
+# 1. Clone the repository
+git clone https://github.com/himanshu231204/featurementor-ai.git
+cd featurementor-ai
 
-**Tested on:**
-- Titanic – Machine Learning from Disaster  
-- House Prices – Advanced Regression Techniques  
-- Adult Census Income Dataset  
+# 2. Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate        # Windows: venv\Scripts\activate
 
----
+# 3. Install dependencies
+pip install -r requirements.txt
 
-## ⚠️ Limitations
+# 4. Run the app
+streamlit run src/ui/app.py
+```
 
-This tool is intentionally designed for **learning**, not full automation.
-
-- ❌ No image, text, or audio datasets
-- ❌ No time-series feature engineering
-- ❌ No automatic model training
-- ❌ Does not directly modify datasets
-
-Very small datasets may produce weak statistical signals.
+> **Note:** The live app uses a shared Gemini API key. For local use, set your own key in `.env`: `GEMINI_API_KEY=your_key_here`
 
 ---
 
@@ -156,70 +149,113 @@ Very small datasets may produce weak statistical signals.
 featurementor-ai/
 │
 ├── src/
-│   ├── core/        # Profiling & feature rules
-│   ├── ai/          # GenAI explanations
-│   ├── reports/     # PDF generation
-│   └── ui/          # Streamlit dashboard
+│   ├── core/
+│   │   ├── data_loader.py       # CSV loading utilities
+│   │   ├── data_profiler.py     # Feature statistics computation
+│   │   ├── feature_rules.py     # Rule-based recommendation engine
+│   │   └── recommender.py       # Orchestrates profiling + rules
+│   │
+│   ├── ai/
+│   │   └── explainer.py         # Google Gemini AI explanation layer
+│   │
+│   ├── reports/
+│   │   └── pdf_generator.py     # PDF report generation (fpdf)
+│   │
+│   └── ui/
+│       └── app.py               # Streamlit dashboard
 │
-├── test_run.py
+├── sample_data.csv              # Example dataset to try immediately
+├── test_run.py                  # Basic smoke tests
 ├── requirements.txt
-├── README.md
+└── README.md
 ```
 
 ---
 
-## 🛠️ Local Setup (Optional)
+## ✅ Supported Dataset Types
 
-```bash
-git clone https://github.com/himanshu231204/featurementor-ai.git
-cd featurementor-ai
+| Type | Supported |
+|:--|:--:|
+| Tabular CSV (classification) | ✅ |
+| Tabular CSV (regression) | ✅ |
+| Mixed numeric + categorical | ✅ |
+| High-cardinality categoricals | ✅ |
+| Image / Audio / Text datasets | ❌ |
+| Time-series datasets | ❌ |
 
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-
-pip install -r requirements.txt
-streamlit run src/ui/app.py
-```
-
----
-
-## 🎓 Who Should Use This?
-
-* Beginner Data Science students
-* College students learning Machine Learning
-* Anyone confused about feature engineering
-* Educators teaching data preprocessing concepts
+**Tested on:** Titanic · House Prices · Adult Census Income · Bank Marketing
 
 ---
 
-## 💖 Support This Project
+## 🎓 Who Is This For?
 
-If this project helped you, consider supporting my work!
-
-[![Sponsor](https://img.shields.io/badge/Sponsor-💖-ff69b4?style=for-the-badge)](https://github.com/sponsors/himanshu231204)
-
-Every contribution helps me:
-- ⏰ Spend more time on open-source
-- 🆓 Keep all tools free for everyone
-- 📚 Create more tutorials and guides
-- 🚀 Build new developer tools
-
-**[⭐ Star this repo](../../stargazers)** if you find it useful — it means a lot!
+| Audience | Benefit |
+|:--|:--|
+| 🧑‍🎓 Beginner data science students | Learn the *why* behind preprocessing |
+| 🏫 College ML courses | Use as a teaching companion tool |
+| 🔬 Kaggle competitors | Quick feature audit for any dataset |
+| 👩‍🏫 Educators & instructors | Visual explainer for classroom demos |
+| 🤔 Anyone confused by feature engineering | Clear, friendly, jargon-free guidance |
 
 ---
 
-## 👨‍💻 Developed By
+## 🤝 Contributing
+
+Contributions are welcome! Here's how to get started:
+
+1. Fork the repo
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+See [open issues](https://github.com/himanshu231204/featurementor-ai/issues) for ideas.
+
+---
+
+## ⭐ Support This Project
+
+If FeatureMentor AI helped you understand feature engineering better, the biggest way to say thanks is to **star this repository** ⭐
+
+<div align="center">
+
+[![Star this repo](https://img.shields.io/badge/⭐%20Star%20this%20repo-It%20means%20a%20lot!-yellow?style=for-the-badge)](https://github.com/himanshu231204/featurementor-ai/stargazers)
+
+[![Sponsor](https://img.shields.io/badge/💖%20Sponsor-Support%20open--source-ff69b4?style=for-the-badge)](https://github.com/sponsors/himanshu231204)
+
+</div>
+
+Starring helps:
+- 📈 Reach more students who need this tool
+- ⏰ Motivate continued development
+- 🆓 Keep the project free and open-source
+- 🚀 Build new features faster
+
+---
+
+## 👨‍💻 Author
+
+<div align="center">
 
 **Himanshu Kumar**
 
-* 🔗 LinkedIn: [https://www.linkedin.com/in/himanshu231204](https://www.linkedin.com/in/himanshu231204)
-* 🐙 GitHub: [https://github.com/himanshu231204](https://github.com/himanshu231204)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/himanshu231204)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/himanshu231204)
+
+</div>
 
 ---
 
-## ⭐ Final Note
+## 📄 License
 
-FeatureMentor AI is not just a tool —
-it is a **learning companion** for understanding feature engineering.
+This project is licensed under the [MIT License](LICENSE) — free for personal, academic, and commercial use.
 
-If you find this project useful, feel free to ⭐ the repository.
+---
+
+<div align="center">
+
+**FeatureMentor AI** — *Not just a tool. A learning companion.*
+
+⭐ Star · 🍴 Fork · 🐛 Report Bug · 💡 Request Feature
+
+</div>
