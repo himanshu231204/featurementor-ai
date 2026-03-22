@@ -1,25 +1,45 @@
 # GitHub Repository Settings
 
-This file contains the recommended **description** and **topics** to set on this
-repository's GitHub settings page (`Settings → General → About`) to maximize
-discoverability and stars.
+This file contains the recommended **description** and **topics** for this repository to
+maximize discoverability and stars. You can apply them automatically (recommended) or
+manually through the GitHub UI.
 
 ---
 
-## 📝 Repository Description
+## 🚀 Option 1 — Apply Automatically (Recommended)
 
-Copy-paste this into the **"Description"** field on GitHub (under the repo name).
-It is 228 characters — well within GitHub's 350-character limit:
+A GitHub Actions workflow is included at `.github/workflows/set-repo-metadata.yml`.
 
-```
-🧠 AI-powered Feature Engineering Advisor for ML students. Upload any CSV → get smart preprocessing recommendations with Google Gemini explanations. Learn WHY, not just HOW. Built with Streamlit + Python. ⭐ Star if useful!
-```
+1. Go to **Actions → Set Repository Description and Topics** on your repository page
+2. Click **"Run workflow"** → **"Run workflow"**
+3. The workflow sets the description, homepage URL, and all 20 topics in one step
+
+> **Note:** The `GITHUB_TOKEN` used by the workflow needs `administration: write`
+> permission. If the run fails with a 403, go to **Settings → Actions → General →
+> Workflow permissions** and enable **"Read and write permissions"**, then re-run.
 
 ---
 
-## 🏷️ Repository Topics
+## 🛠️ Option 2 — Apply Manually via GitHub UI
 
-Add all of the following tags in the **"Topics"** field on GitHub:
+### 📝 Repository Description
+
+Click the ⚙️ gear icon next to **"About"** on your repository page and paste this into
+the **"Description"** field (228 characters — within GitHub's 350-character limit):
+
+```
+🧠 AI-powered Feature Engineering Mentor for ML students. Upload any CSV → get smart preprocessing recommendations with Google Gemini explanations. Learn WHY, not just HOW. Built with Streamlit + Python. ⭐ Star if useful!
+```
+
+### 🌐 Homepage URL
+
+```
+https://featurementor-ai-7fgt3wychg7xj6ltklge7w.streamlit.app/
+```
+
+### 🏷️ Repository Topics
+
+In the same **"About"** dialog, add each of these topics:
 
 ```
 machine-learning
@@ -43,13 +63,6 @@ data-analysis
 pdf-report
 genai
 ```
-
-### How to add topics on GitHub
-
-1. Go to your repository page on GitHub
-2. Click the ⚙️ gear icon next to **"About"** (top-right of the repo description area)
-3. Paste or type each topic above into the **"Topics"** field
-4. Click **"Save changes"**
 
 ---
 
