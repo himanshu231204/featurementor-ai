@@ -4,53 +4,54 @@ on:
   workflow_dispatch:
 
 permissions:
+  contents: write
   administration: write
 
 jobs:
   set-metadata:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Authenticate GitHub CLI
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+
       - name: Set repository description and homepage
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh api \
             --method PATCH \
+            -H "Accept: application/vnd.github+json" \
             /repos/${{ github.repository }} \
             -f description="🧠 AI-powered Feature Engineering Mentor for ML students. Upload any CSV → get smart preprocessing recommendations with Google Gemini explanations. Learn WHY, not just HOW. Built with Streamlit + Python. ⭐ Star if useful!" \
             -f homepage="https://featurementor-ai-7fgt3wychg7xj6ltklge7w.streamlit.app/"
 
       - name: Set repository topics
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh api \
             --method PUT \
+            -H "Accept: application/vnd.github+json" \
             /repos/${{ github.repository }}/topics \
-            -F "names[]=machine-learning" \
-            -F "names[]=feature-engineering" \
-            -F "names[]=data-science" \
-            -F "names[]=python" \
-            -F "names[]=streamlit" \
-            -F "names[]=google-gemini" \
-            -F "names[]=generative-ai" \
-            -F "names[]=artificial-intelligence" \
-            -F "names[]=data-preprocessing" \
-            -F "names[]=educational" \
-            -F "names[]=open-source" \
-            -F "names[]=beginner-friendly" \
-            -F "names[]=pandas" \
-            -F "names[]=scikit-learn" \
-            -F "names[]=explainable-ai" \
-            -F "names[]=ml-education" \
-            -F "names[]=kaggle" \
-            -F "names[]=data-analysis" \
-            -F "names[]=pdf-report" \
-            -F "names[]=genai"
+            -f "names[]=machine-learning" \
+            -f "names[]=feature-engineering" \
+            -f "names[]=data-science" \
+            -f "names[]=python" \
+            -f "names[]=streamlit" \
+            -f "names[]=google-gemini" \
+            -f "names[]=generative-ai" \
+            -f "names[]=artificial-intelligence" \
+            -f "names[]=data-preprocessing" \
+            -f "names[]=educational" \
+            -f "names[]=open-source" \
+            -f "names[]=beginner-friendly" \
+            -f "names[]=pandas" \
+            -f "names[]=scikit-learn" \
+            -f "names[]=explainable-ai" \
+            -f "names[]=ml-education" \
+            -f "names[]=kaggle" \
+            -f "names[]=data-analysis" \
+            -f "names[]=pdf-report" \
+            -f "names[]=genai"
 
       - name: Confirm changes
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "✅ Repository metadata updated successfully!"
           gh repo view ${{ github.repository }} --json description,repositoryTopics \
